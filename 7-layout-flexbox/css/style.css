@@ -1,0 +1,97 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+  }
+
+header {
+    background-color: rgb(228, 65, 65);
+}
+
+.main {
+    background-color: lightskyblue;
+}
+
+.aside1 {
+    background-color: green;
+}
+
+.aside2 {
+    background-color: pink;
+}
+
+footer {
+    background-color: rgba(128, 0, 128, 0.734);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.container > * {
+    flex-basis: 100%;
+    /* flex-grow: 1; */
+    padding: 10px;
+}
+
+
+
+.obj {
+    position: relative;
+    height: 28vh;
+}
+/* dla ustalenia odpowiedniej wysokości article i aside'ów dodałem obiekty do dopowiednich znaczników.
+Nie miałem pomysłu jak edytować wysokość wybranych elementów przy flex::row.
+Pytanie: Czy jest na to lepszy sposób? */
+
+
+@media all and (max-width: 767px) {
+    * {
+        font-size: 0.95em;
+    }
+    .obj {
+        height: 18vh;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+    .main {
+        order: 1;
+        flex: 3 0 0;
+    }
+
+    .aside2 {
+		order: 2;
+        flex: 1 0 0;
+	}
+    .aside1 {
+        order: 3;
+    }
+    footer {
+        order: 4;
+    }
+    
+}
+
+@media all and (min-width: 993px) {
+    .aside1 {
+        order: 1;
+        flex: 1 0 0;
+    }
+    .main {
+        order: 2;
+        flex: 3 0 0;
+    }
+    .aside2 {
+        order: 3;
+        flex: 1 0 0;
+    }
+    footer {
+        order: 4;
+    }
+}
