@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+#uczniowie {
+    /* max-width: 1200px; */
+    background-color: #0a8d6134;
+}
+
+#uczniowie>div, #uczniowie>button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#uczniowie>div>* {
+    flex-basis: 20%;
+    padding: 3px;
+    margin: 5px;
+}
+
+/* .uczen {
+    flex-grow: 2;
+}
+ */
+input[type='number'] {
+    width: 5%;
+}
+
+/* input[type='text'] {
+    width: 30%;
+} */
