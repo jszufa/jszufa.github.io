@@ -1,5 +1,84 @@
 .bg-red {
     background-color: red;
-  }
+}
 
-  
+* {
+    box-sizing: border-box;
+}
+
+#pracownicy {
+    max-width: 800px;
+    background-color: #0a8d6134;
+}
+
+#pracownicy>div, #pracownicy>button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#pracownicy>div>* {
+    flex-basis: 20%;
+    padding: 3px;
+    margin: 5px;
+}
+
+.pracownik, #tytul-pracownik {
+    flex-grow: 2;
+}
+
+#title {
+    text-transform: uppercase;
+}
+
+.wyplata, #tytul-wyplata {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.9em;
+    text-transform: uppercase;
+    font-weight: 400;
+    flex-grow: 1;
+    text-align: center;
+    background-color: #0a8d6167;
+    
+}
+
+
+
+/* button */
+#oblicz {
+    padding: 20px;
+    margin: 20px auto;
+    text-transform: uppercase;
+    width: 300px;
+    text-align: center;
+    color: #333;
+    border: 2px solid #0a8d61;
+    transition: all 0.3s;
+    background-color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+#oblicz:hover {
+    color: white;
+    background-color: #0a8d61;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    flex-grow: 1;
+    margin: auto;
+}
+
+li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: none;
+}
