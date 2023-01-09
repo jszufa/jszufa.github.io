@@ -1,34 +1,26 @@
-// function liczSrednia (x) {
 
-//     let oceny = document.get;
-//     let suma = 0;
+let srednie = document.getElementsByClassName('srednia');
 
-//     for x.input[type="number"] in uczen {
-//         suma = suma + x.input[type="number"].value
-//     }
+function liczSrednia() {
 
-//     return suma/length-zbioru
+    for (n = 1; n < 21; n++) {
+        //console.log(`uczen${n}`);
+        let oceny = document.querySelectorAll(`#uczen${n} > input[type='number']`);
+        //console.log(oceny.length);
 
-// }
+        let suma = 0;
+        for (i = 0; i < oceny.length; i++) {
+            let ocena = Number(oceny[i].value);
+            suma = suma + ocena;
+            //console.log(suma);
 
+        }
+        let srednia = suma / oceny.length;
+        console.log(srednia);
 
-for (n=1; n < 21; n++) {
-    //let uczen = document.getElementById (`uczen${n}`);
-    //console.log(uczen.children);
-    //liczSrednia(uczen);
-    //let suma = 0;
-    let oceny = document.querySelectorAll(`#uczen${n} > input[type='number']`);
-    console.log(oceny);
+        srednie[n].innerHTML = srednia.toFixed(2);
 
-    for (n=0; n < oceny.length; n++) {
-        let ocena = oceny[n].value;
-        console.log(ocena);
     }
-    
-
-    //(`#uczen${n} input[type='number'].value`)
-
 }
 
-
-//potrzebuję najpierw element z id: "uczen1", "uczen2". "uczen3"
+liczSrednia();
