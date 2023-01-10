@@ -1,3 +1,16 @@
+.bg-green {
+    background-color: green;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.c-blue {
+    color: blue;
+    font-weight: bold;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -5,6 +18,8 @@
 #uczniowie {
     /* max-width: 1200px; */
     background-color: #0a8d6134;
+    overflow: scroll;
+    min-width: 1400px;
 }
 
 #uczniowie>div, #uczniowie>button {
@@ -20,14 +35,53 @@
     margin: 5px;
 }
 
-/* .uczen {
-    flex-grow: 2;
-}
- */
-input[type='number'] {
-    width: 5%;
+
+input[type='number'],
+.matematyka,
+.informatyka,
+.polski,
+.geografia,
+.biologia,
+.fizyka,
+.chemia {
+    width: 4%;
+    flex-shrink: 3;
 }
 
-/* input[type='text'] {
-    width: 30%;
-} */
+
+
+/* button */
+#oblicz {
+    padding: 20px;
+    margin: 20px auto;
+    text-transform: uppercase;
+    width: 300px;
+    text-align: center;
+    color: #333;
+    border: 2px solid #0a8d61;
+    transition: all 0.3s;
+    background-color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+#oblicz:hover {
+    color: white;
+    background-color: #0a8d61;
+}
+
+h2 {
+    font-size: 1.9em;
+    text-transform: uppercase;
+    font-weight: 400;
+    flex-grow: 1;
+    text-align: center;
+    background-color: #0a8d6167;
+    
+}
+
+#title {
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
