@@ -1,0 +1,27 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+hr {
+    width: 30%;
+    min-width: 80px;
+    border: 1px solid #acadae;
+    border-bottom: 0;
+}
+
+i {
+    height: 80px;
+    width: 80px;
+    color: darkorange;
+    font-size: 3em;
+    /* line-height: 2; fa-brands nadpisuje ten styl*/
+    padding-top: 16px;
+}
+
