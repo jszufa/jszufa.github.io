@@ -2,6 +2,11 @@
 
 $(document).ready(function () {
 
+// let btn = document.getElementById ('get-data');
+// btn.addEventListener('click', function(){
+//     console.log ('ok');
+// });
+
     $('#get-data').click(function () {
 
         $.get('https://akademia108.pl/api/ajax/get-post.php')
