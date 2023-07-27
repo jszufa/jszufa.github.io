@@ -1,0 +1,26 @@
+@mixin white-on-blue {
+    color: $quaternary-color;
+    background-color: $primary-color;
+    text-transform: uppercase;
+}
+
+@mixin white-on-dark {
+    color: $quaternary-color;
+    background-color: $tertiary-color;
+    text-transform: uppercase;
+}
+
+
+
+@mixin btn-shape {
+    border-width: 0;
+    border-radius: 50px;
+    padding: 25px 53px;
+}
+
+@mixin circle {
+        border: 1px solid #ccd1c1;
+        border-radius: 50%;
+        height: 31px;
+        width: 31px;
+}

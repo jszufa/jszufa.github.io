@@ -1,0 +1,120 @@
+.reservation {
+
+    .container-fluid {
+        padding: 0;
+
+
+        img {
+
+            display: none;
+
+        }
+
+        .container-content {
+
+            flex-basis: 100%;
+            background-color: $primary-color;
+            margin: 0;
+            justify-content: center;
+
+            .reservation-form {
+
+                width: 85%;
+
+                .form-row {
+
+                    input,
+                    textarea,
+                    select {
+
+
+                        background-color: $primary-color;
+                        border: none;
+                        border-bottom: 1px solid $quaternary-color;
+                        border-radius: 0;
+                        color: $quaternary-color;
+                        text-transform: uppercase;
+                        margin-top: 35px;
+
+                        &:focus {
+
+                            background-color: white;
+                            color: black;
+
+                        }
+
+                        &::placeholder {
+
+                            color: $quaternary-color;
+                            text-transform: uppercase;
+
+                        }
+
+                    }
+
+
+
+                }
+
+                .submit-button {
+
+                    background-color: $quaternary-color;
+                    color: $secondary-color;
+                    font-weight: bold;
+                    transition-duration: 0.3s;
+                    margin: 35px auto;
+
+
+                    &:hover {
+                        @include white-on-dark
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+
+@media (min-width: 992px) {
+
+
+    .reservation {
+
+        .container-fluid {
+
+            img {
+
+                width: 40%;
+
+            }
+
+            .container-content {
+
+                width: 60%;
+                justify-content: left;
+
+                .reservation-form {
+
+                    width: 60%;
+                    margin-left: 6.66%;
+
+                    .submit-button {
+
+                        margin-left: 0;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+}
